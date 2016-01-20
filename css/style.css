@@ -98,10 +98,16 @@ a:hover{
 	color:#212121;
 	font-size:15px;
 	margin-bottom:3px;
+	text-align: right;
+}
+#about_card .element .place{
+	color:#616161;
+	font-size:13px;
+	text-align: right;
 }
 #about_card .element .info{
 	color:#616161;
-	font-size:14px;
+	font-size:13px;
 }
 hr{
 	width:60%;
