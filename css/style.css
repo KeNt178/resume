@@ -98,16 +98,24 @@ a:hover{
 	color:#212121;
 	font-size:15px;
 	margin-bottom:3px;
-	text-align: right;
+	text-align: left;
+}
+#about_card .element .info{
+	color:#212121;
+	font-size:13px;
+	margin-bottom:3px;
+	text-align: left;
 }
 #about_card .element .place{
 	color:#616161;
 	font-size:13px;
-	text-align: right;
+	text-align: left;
 }
-#about_card .element .info{
+#about_card .element .date{
 	color:#616161;
 	font-size:13px;
+	margin: 5px 0px;
+	text-align: right;
 }
 hr{
 	width:60%;
