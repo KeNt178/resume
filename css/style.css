@@ -109,6 +109,7 @@ a:hover{
 #about_card .formation {
 	border-right: solid;
 	border-color: #2196F3;
+	border-width: 3px;
 }
 #about_card .formation .element .place{
 	color:#616161;
@@ -129,12 +130,12 @@ a:hover{
 	text-align: right;
 }
 #about_card .formation .element .date{
-	margin: -20px -33px -20px 0;
+	margin: -20px -32px -20px 0;
 }
 #about_card .bullet {;
 	vertical-align : -21%;
 	margin-left: 15px;
-	font-size: 60px;
+	font-size: 56px;
 	color: #2196F3;
 }
 hr{
