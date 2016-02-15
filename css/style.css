@@ -129,10 +129,10 @@ a:hover{
 	text-align: right;
 }
 #about_card .formation .element .date{
-	margin-right: -33px
+	margin: -30px -33px -10px 0;
 }
 #about_card .bullet {;
-	vertical-align : -20%;
+	vertical-align : -21%;
 	margin-left: 15px;
 	font-size: 60px;
 	color: #2196F3;
