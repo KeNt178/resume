@@ -132,11 +132,16 @@ a:hover{
 #about_card .formation .element .date{
 	margin: -20px -32px -20px 0;
 }
-#about_card .bullet {;
+#about_card .bullet {
 	vertical-align : -21%;
 	margin-left: 15px;
 	font-size: 56px;
 	color: #2196F3;
+}
+#map {
+	background-color: #CCC;
+	width: 100%;
+    height: 400px;
 }
 hr{
 	width:60%;
