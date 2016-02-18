@@ -49,7 +49,17 @@ a:hover{
 #quick_card #photo{
 	height:80px;
 	width:80px;
-	border-radius:99px;
+	border-radius:50%;
+}
+#quick_card #flag{
+	height:40px;
+	width:40px;
+	border-radius:50%;
+	box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.19), 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+	position: absolute;
+}
+#quick_card #flag:hover{
+	opacity: 0.8;
 }
 #quick_card #name{
 	font-weight:normal;

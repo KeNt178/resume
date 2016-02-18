@@ -18,11 +18,13 @@
 	<meta name="author" content="Quentin Lapointe">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 	<meta name="theme-color" content="#2196F3">
+	<script type="text/javascript" src="js/languages.js"></script>
 </head>
 <body>
 <div id="blue_bg"></div>
 <header>
 	<div id="quick_card" class="card">
+		<div style="text-align: left"><img id="flag" onclick="switchLanguage()" src="img/france_flag.svg" /></div>
 		<div><img id="photo" src="img/photo.jpg" /></div> <!-- replace photo in /img/ 705x705 -->
 		<h1 id="name">Quentin Lapointe</h1>
 		<h2 id="description">Étudiant à l'ENSIMAG</h2>
@@ -46,13 +48,13 @@
 			</section>
 			<section class="element">
 				<div class="date">2013<span class="bullet">&#8226;</span></div>
-				<div class="name">Tronc Commun</div>
-				<div class="place">Université de Technologie de Compiègne</div>
+				<div class="name">Tronc commun</div>
+				<div id="place_utc" class="place">Université de Technologie de Compiègne</div>
 			</section>
 			<section class="element">
 				<div class="date">2012<span class="bullet">&#8226;</span></div>
 				<div class="name">Baccalauréat Scientifique</div>
-				<div class="description">Mention bien – 15.92</div>
+				<div class="description">Mention bien – 15,92</div>
 				<div class="place">Saint-Germain-en-Laye</div>
 				<div class="date">2011<span class="bullet">&#8226;</span></div>
 			</section>
@@ -112,7 +114,7 @@
 		<div class="content">
 			<section class="element">
 				<div class="name">Anglais</div>
-				<div class="description">Courant — TOIEC 890 points</div>
+				<div class="description">Courant — TOEIC 890 points</div>
 			</section>
 			<hr align="left"/>
 			<section class="element">
@@ -132,18 +134,13 @@
 			</section>
 			<hr align="left"/>
 			<section class="element">
-				<div class="name">Ramasseur de balles</div>
-				<div class="description">Roland Garros 2012</div>
-			</section>
-			<hr align="left"/>
-			<section class="element">
 				<div class="name">Football</div>
 				<div class="description">En compétition</div>
 			</section>
 			<hr align="left"/>
 			<section class="element">
-				<div class="name">Recordman du monde de bisous</div>
-				<div class="description">185 bisous à 185 personnes en une minute</div>
+				<div class="name">Ramasseur de balles</div>
+				<div class="description">Roland Garros 2012</div>
 			</section>
 		</div>
 	</section>
