@@ -79,9 +79,6 @@ a:hover{
 	font-size:13px;
 	color:#777777;
 }
-#about_card #map {
-	padding: 0;
-}
 #about_card{
 	position:relative;
 	padding:15px 32px 8px 32px;
@@ -152,9 +149,8 @@ a:hover{
 	color: #2196F3;
 }
 #map_card{
-	position:relative;;
-	width: 100%;
-	margin-top:22px;
+	position: relative;
+	margin:22px auto 44px auto;
 }
 #map {
 	background-color: #CCC;
