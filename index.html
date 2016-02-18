@@ -145,9 +145,6 @@
 		</div>
 	</section>
 </div>
-<div id="map_card" class="card map">
-	<div id="map"></div>
-</div>
 <div id="contact_card" class="card">
 	<section class="tab">
 		<div class="title"><i class="fa fa-envelope"></i>Contact</div>
@@ -158,6 +155,9 @@
 		</div>
 	</section>
 </div>
+<div id="map_card" class="card map">
+	<div id="map"></div>
+</div>
 <a href="mailto:q.lapointe@gmail.com">
 	<div id="fab">&nbsp;<i class="fa fa-envelope"></i>&nbsp;</div>
 </a>
@@ -167,26 +167,26 @@
 </footer>
 <script>
 	function initMap() {
-		var center = {lat: 46.8035887, lng: 2.3297025}
-		var ensimag = {lat: 45.1933905, lng: 5.7682998};
-		var velizy = {lat: 48.7819096, lng: 2.2176999};
-		var utc = {lat: 49.4155636, lng: 2.8184277};
-		var mediametrie = {lat: 48.8970207, lng: 2.2873923};
-		var arismore = {lat: 48.8417505, lng: 2.2197262};
-		var work =  ['work.png', arismore, mediametrie];
-		var study = ['university.png', ensimag, velizy, utc];
-		places = [work, study];
+		var center = {lat: 47.5818414, lng: 2.5530366};
+		var ensimag = {"icon": "university.png", "position": {lat: 45.1933905, lng: 5.7682998}};
+		var velizy = {"icon": "university.png", "position": {lat: 48.7819096, lng: 2.2176999}};
+		var utc = {"icon": "university.png", "position": {lat: 49.4155636, lng: 2.8184277}};
+		var mediametrie = {"icon": "mediametrie.png", "position": {lat: 48.8970207, lng: 2.2873923}};
+		var arismore = {"icon": "arismore.png", "position": {lat: 48.8417505, lng: 2.2197262}};
 
-		var mapDiv = document.getElementById('map');
-		var map = new google.maps.Map(mapDiv, {center: center, zoom: 5});
+		var places =  [ensimag, velizy, utc, arismore, mediametrie];
+
+		var mapDiv = document.getElementById("map");
+		var map = new google.maps.Map(mapDiv, {center: center, zoom: 6});
 
 		var zindex = 0;
 		for (var i = 0; i < places.length; i++) {
-			typesofplace = places[1-i];
-			for (var j = 1; j < typesofplace.length; j++) {
-				var marker = new google.maps.Marker({position: typesofplace[j], map: map, icon: 'img/' + typesofplace[0], zIndex: zindex});
-				zindex++;
-			}
+			var marker = new google.maps.Marker({position: places[i]["position"], map: map, icon: "img/" + places[i]["icon"], zIndex: zindex});
+			google.maps.event.addListener(marker, "click", function(evenement) {
+				map.panTo(evenement.latLng);
+				map.setZoom(17);
+			});
+			zindex++;
 		}
 
 	}
