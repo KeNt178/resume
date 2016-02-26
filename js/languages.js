@@ -1,6 +1,6 @@
 var dictionary =
 {
-	"french":{
+	"fr":{
 		"title":[
 			"<i class=\"fa fa-graduation-cap\"></i>" + "Formation",
 			"<i class=\"fa fa-suitcase\"></i>" + "Expériences professionnelles",
@@ -20,6 +20,7 @@ var dictionary =
 			"Programmation",
 			"Outils",
 			"Systèmes d'exploitation",
+			"Français",
 			"Anglais",
 			"Espagnol",
 			"Parachutiste",
@@ -34,6 +35,7 @@ var dictionary =
 			"",
 			"",
 			"",
+			"Langue maternelle",
 			"Courant — TOEIC 890 points",
 			"Niveau B1",
 			"10 sauts autonomes",
@@ -60,7 +62,7 @@ var dictionary =
 			"Juillet 2012"
 		]
 	},
-	"english":{
+	"en":{
 		"title":[
 			"<i class=\"fa fa-graduation-cap\"></i>" + "Education",
 			"<i class=\"fa fa-suitcase\"></i>" + "Work experience",
@@ -80,6 +82,7 @@ var dictionary =
 			"Programming",
 			"Tools",
 			"Operating systems",
+			"Français",
 			"English",
 			"Spanish",
 			"Parachutist",
@@ -94,6 +97,7 @@ var dictionary =
 			"",
 			"",
 			"",
+			"Mother tongue",
 			"Fluent — Good communication skills",
 			"Basic notions",
 			"10 autonomous jumps",
@@ -125,16 +129,18 @@ var dictionary =
 function switchLanguage() {
 	var image = document.getElementById("flag");
 	if (image.src.match("france")) {
-		image.src = "img/uk_flag.svg";
-		setLanguage("english");
+		image.src = "../img/uk_flag.svg";
+		setLanguage("en");
 	} else {
-		image.src = "img/france_flag.svg";
-		setLanguage("french");
+		image.src = "../img/france_flag.svg";
+		setLanguage("fr");
 	}
 }
 
 function setLanguage(language) {
-	document.getElementById("description").innerHTML = (language === "french")?"Etudiant à l'ENSIMAG":"Student at ENSIMAG";
+	var image = document.getElementById("flag");
+	image.src = (language === "fr")?"../img/france_flag.svg":"../img/uk_flag.svg";
+	document.getElementById("description").innerHTML = (language === "fr")?"Étudiant à l'ENSIMAG":"Student at ENSIMAG";
 	for (var classe in dictionary[language]) {
 		changeClassValues(classe, dictionary[language][classe]);
 	}
@@ -149,6 +155,5 @@ function changeClassValues(classe, values) {
 				classes[i].innerHTML += '<span class="bullet">&#8226;</span>';
 			}
 		}
-
 	}
 }

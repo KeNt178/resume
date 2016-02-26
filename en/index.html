@@ -11,21 +11,20 @@
 <html lang="en">
 <head>
 	<title>Resume — LAPOINTE Quentin</title>
-	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="../css/style.css" rel="stylesheet" type="text/css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
 	<meta name="description" content="Your meta-description here">
 	<meta name="author" content="Quentin Lapointe">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 	<meta name="theme-color" content="#2196F3">
-	<script type="text/javascript" src="js/languages.js"></script>
 </head>
 <body>
 <div id="blue_bg"></div>
 <header>
 	<div id="quick_card" class="card">
-		<div style="text-align: left"><img id="flag" onclick="switchLanguage()" src="img/france_flag.svg" /></div>
-		<div><img id="photo" src="img/photo.jpg" /></div> <!-- replace photo in /img/ 705x705 -->
+		<div style="text-align: left"><a href="#"><img id="flag" onclick="switchLanguage()" src="../img/france_flag.svg" /></a></div>
+		<div><img id="photo" src="../img/photo.jpg" /></div> <!-- replace photo in /img/ 705x705 -->
 		<h1 id="name">Quentin Lapointe</h1>
 		<h2 id="description">Étudiant à l'ENSIMAG</h2>
 		<h3 id="sousdescription">École Nationale Supérieure d'Informatique et de Mathématiques Appliquées</h3>
@@ -113,6 +112,11 @@
 		<div class="title"><i class="fa fa-flag"></i>Langues étrangères</div>
 		<div class="content">
 			<section class="element">
+				<div class="name">Français</div>
+				<div class="description">Langue maternelle</div>
+			</section>
+			<hr align="left"/>
+			<section class="element">
 				<div class="name">Anglais</div>
 				<div class="description">Courant — TOEIC 890 points</div>
 			</section>
@@ -151,7 +155,6 @@
 		<div class="content">
 			<div class="contacts"><i class="fa fa-envelope"></i>&nbsp; <a href="mailto:q.lapointe@gmail.com">q.lapointe@gmail.com</a></div>
 			<div class="contacts"><i class="fa fa-university"></i>&nbsp; <a href="mailto:quentin.lapointe@ensimag.grenoble-inp.fr">quentin.lapointe@ensimag.grenoble-inp.fr</a></div>
-			<!-- You can add more contacts! -->
 		</div>
 	</section>
 </div>
@@ -165,32 +168,13 @@
 <footer>
   <small></small>
 </footer>
-<script>
-	function initMap() {
-		var center = {lat: 47.5818414, lng: 2.5530366};
-		var ensimag = {"icon": "university.png", "position": {lat: 45.1933905, lng: 5.7682998}};
-		var velizy = {"icon": "university.png", "position": {lat: 48.7819096, lng: 2.2176999}};
-		var utc = {"icon": "university.png", "position": {lat: 49.4155636, lng: 2.8184277}};
-		var mediametrie = {"icon": "mediametrie.png", "position": {lat: 48.8970207, lng: 2.2873923}};
-		var arismore = {"icon": "arismore.png", "position": {lat: 48.8417505, lng: 2.2197262}};
-
-		var places =  [ensimag, velizy, utc, arismore, mediametrie];
-
-		var mapDiv = document.getElementById("map");
-		var map = new google.maps.Map(mapDiv, {center: center, zoom: 6});
-
-		var zindex = 0;
-		for (var i = 0; i < places.length; i++) {
-			var marker = new google.maps.Marker({position: places[i]["position"], map: map, icon: "img/" + places[i]["icon"], zIndex: zindex});
-			google.maps.event.addListener(marker, "click", function(evenement) {
-				map.panTo(evenement.latLng);
-				map.setZoom(17);
-			});
-			zindex++;
-		}
-
-	}
+<script type="text/javascript" src="../js/languages.js"></script>
+<script type="text/javascript">
+	path = window.location.pathname.split('/');
+	language = path[path.length - 2];
+	setLanguage(language);
 </script>
+<script type="text/javascript" src="../js/map.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
 </body>
 </html>
