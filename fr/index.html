@@ -6,16 +6,24 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="../css/font-awesome.min.css">
 	<link rel="icon" type="image/png" href="../img/wam.png" />
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 	<meta name="description" content="Resume — LAPOINTE Quentin">
 	<meta name="author" content="Quentin Lapointe">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 	<meta name="theme-color" content="#2196F3">
+	<meta charset="UTF-8">
 </head>
 <body>
 <div id="blue_bg"></div>
 <header>
 	<div id="quick_card" class="card">
-		<div style="text-align: left"><a href="#"><img id="flag" onclick="switchLanguage()" src="../img/hybrid_flag.svg" /><img id="flag" onclick="switchLanguage()" src="../img/refresh.svg" /></a></div>
+		<div class="checkBoxs" style="text-align: left; margin: -13px 0 0 -20px" onclick="switchLanguage()">
+			<div class="checkBox">
+				<label for="checkbox-1">
+					<span id="switchflag" class="circle"></span>
+				</label>
+			</div>
+		</div>
 		<div><img id="photo" src="../img/photo.jpg" /></div>
 		<h1 id="name">Quentin Lapointe</h1>
 		<h2 id="description">Étudiant à l'ENSIMAG</h2>
@@ -195,7 +203,6 @@
 	path = window.location.pathname.split('/');
 	language = path[path.length - 2];
 	setLanguage(language);
-	bounceFlag();
 </script>
 <script type="text/javascript" src="../js/map.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>

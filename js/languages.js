@@ -165,20 +165,19 @@ var dictionary =
 }
 
 function switchLanguage() {
-	var desc = document.getElementById("description").innerHTML;
-	if (desc.match("Student")) {
-		// image.src = "../img/uk_flag.svg";
-		setLanguage("fr");
-	} else {
-		// image.src = "../img/france_flag.svg";
+	if ($("#switchflag").css('background-image').match("france")) {
 		setLanguage("en");
+	} else {
+		setLanguage("fr");
 	}
 }
 
 function setLanguage(language) {
-	var image = document.getElementById("flag");
-	// image.src = (language === "fr")?"../img/france_flag.svg":"../img/uk_flag.svg";
-	document.getElementById("description").innerHTML = (language === "fr")?"Étudiant à l'ENSIMAG":"Student at ENSIMAG";
+	console.log(language);
+	var flag_file = ((language === 'fr') ? 'france' : 'uk')
+	var description = (language === 'fr')?"Étudiant à l'ENSIMAG":"Student at ENSIMAG";
+	$("#switchflag").css('background-image', 'url("../img/' + flag_file + '_flag.svg"');
+	$("#description").text(description)
 	for (var classe in dictionary[language]) {
 		setClassValues(classe, dictionary[language][classe]);
 	}
@@ -188,6 +187,9 @@ function setClassValues(classe, values) {
 	var classes = document.getElementsByClassName(classe);
 	for (var i = 0; i < classes.length; i++) {
 		if (values[i] !== '') {
+// 			$("#container").fadeOut(function() {
+//   $(this).text("World")
+// }).fadeIn();
 			classes[i].innerHTML = values[i];
 			if (classe === 'date' & i < 5) {
 				classes[i].innerHTML += '<span class="bullet">&#8226;</span>';
@@ -196,6 +198,26 @@ function setClassValues(classe, values) {
 	}
 }
 
-function bounceFlag() {
+var delayTime = 1000;
 
+$(".checkBox label").click(function() {
+   $(this).parent(".checkBox").toggleClass('active');
+})
+
+function effect(eqItem, delay) {
+   setTimeout(function() {
+      setInterval(function() {
+
+         $(".checkBoxs").eq(eqItem).each(function() {
+            $(".checkBox label", this).click();
+         });
+
+      }, delayTime)
+   }, delay)
 }
+
+effect(4, 500);
+effect(3, 600);
+effect(2, 700);
+effect(1, 800);
+effect(0, 900);
