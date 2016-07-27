@@ -195,3 +195,7 @@ function setClassValues(classe, values) {
 		}
 	}
 }
+
+function bounceFlag() {
+
+}
