@@ -165,19 +165,19 @@ var dictionary =
 }
 
 function switchLanguage() {
-	var image = document.getElementById("flag");
-	if (image.src.match("france")) {
-		image.src = "../img/uk_flag.svg";
-		setLanguage("en");
-	} else {
-		image.src = "../img/france_flag.svg";
+	var desc = document.getElementById("description").innerHTML;
+	if (desc.match("Student")) {
+		// image.src = "../img/uk_flag.svg";
 		setLanguage("fr");
+	} else {
+		// image.src = "../img/france_flag.svg";
+		setLanguage("en");
 	}
 }
 
 function setLanguage(language) {
 	var image = document.getElementById("flag");
-	image.src = (language === "fr")?"../img/france_flag.svg":"../img/uk_flag.svg";
+	// image.src = (language === "fr")?"../img/france_flag.svg":"../img/uk_flag.svg";
 	document.getElementById("description").innerHTML = (language === "fr")?"Étudiant à l'ENSIMAG":"Student at ENSIMAG";
 	for (var classe in dictionary[language]) {
 		setClassValues(classe, dictionary[language][classe]);

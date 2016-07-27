@@ -49,13 +49,13 @@ a:hover{
 	border-radius:50%;
 	box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.4);
 	position: absolute;
-	-webkit-animation-name: pulse;
-	animation: pulse 1s ease-in-out infinite;
+	/*-webkit-animation-name: pulse;
+	animation: pulse 1s ease-in-out infinite;*/
 }
 /*
  * Pulse animation
 */
-@-webkit-keyframes pulse {
+/*@-webkit-keyframes pulse {
     0% { -webkit-transform: scale(1); }
     50% { -webkit-transform: scale(1.2); }
     100% { -webkit-transform: scale(1); }
@@ -64,7 +64,7 @@ a:hover{
     0% { transform: scale(1); }
     50% { transform: scale(1.2); }
     100% { transform: scale(1); }
-}
+}*/
 #quick_card #flag:hover{
 	opacity: 0.8;
 }

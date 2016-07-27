@@ -4,7 +4,7 @@ function initMap() {
 	var velizy = {icon: "university.png", position: {lat: 48.781856, lng: 2.218230}};
 	var utc = {icon: "university.png", position: {lat: 49.4155636, lng: 2.8184277}};
 	var mediametrie = {icon: "mediametrie.png", position: {lat: 48.8970207, lng: 2.2873923}};
-	var arismore = {icon: "arismore.png", position: {lat: 48.8417505, lng: 2.2197262}};
+	var arismore = {icon: "arismore_50.png", position: {lat: 48.8417505, lng: 2.2197262}};
 
 	var places =  [ensimag, velizy, utc, arismore, mediametrie];
 
