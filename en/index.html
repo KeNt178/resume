@@ -200,6 +200,9 @@
 <script type="text/javascript">
 	path = window.location.pathname.split('/');
 	language = path[path.length - 2];
+	if (language === 'en') {
+		$('input').prop('checked', true);
+	}
 	setLanguage(language);
 </script>
 <script type="text/javascript" src="../js/map.js"></script>
