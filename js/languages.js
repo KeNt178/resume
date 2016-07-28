@@ -36,7 +36,8 @@ var dictionary =
 			"Passions"
 		],
 		"description":[
-			"Mention bien — 15,92",
+			"Major",
+			"Mention bien",
 
 			"E-marketing à l'aide d'une base de donnée graphes<ul><li>Liaisons des données CRM et de navigation Web de différents clients</li><li>Récupération d'une liste de contacts par calcul du chemin le moins cher en fonction d'une matrice de prix</li></ul>",
 			"Détection d'incohérences au sein d'une BD relationnelle en la transposant en BD orientée graphes<ul><li>Modélisation de la BD & ingestion des données</li><li>Détection d'incohérences & propositions de rectification</li><li>Statistiques sur les audiences Internet multi-support</li></ul>",
@@ -118,6 +119,7 @@ var dictionary =
 			""
 		],
 		"description":[
+			"Top of the year",
 			"With honours",
 
 			"E-marketing with graph-oriented database<ul><li>Linking CRM and Web navigation data from several clients</li><li>Collecting a list of contacts by computing the least expensive path according to a price matrix</li></ul>",

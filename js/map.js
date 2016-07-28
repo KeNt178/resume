@@ -53,7 +53,7 @@ function initMap() {
 	}
 
 	var places =  [ensimag, velizy, utc, arismore, mediametrie, cabestan];
-	var colors = ['yellow', 'yellow', 'yellow', 'black', 'green', 'blue'];
+	var colors = ['orange', 'orange', 'orange', 'black', 'green', 'blue'];
 
 	var mapDiv = document.getElementById("map");
 	var map = new google.maps.Map(mapDiv, {center: center, zoom: 6});
