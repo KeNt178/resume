@@ -62,7 +62,6 @@ function initMap() {
 	for (var i = 0; i < places.length; i++) {
 		places[i].map = map;
 		var marker = new google.maps.Marker({position: places[i].position, map: map, icon: {url: '../img/map_icon_' + colors[i] + '.svg', scaledSize: new google.maps.Size(50, 50)}, zIndex: zindex++});
-		console.log(Date.now() );
 		places[i].zIndex = zindex++;
 		var marker2 = new google.maps.Marker(places[i]);
 		google.maps.event.addListener(marker, "click", function(evenement) {
