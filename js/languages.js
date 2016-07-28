@@ -185,7 +185,6 @@ function setLanguageWithAnimation(language) {
 }
 
 function setLanguage(language) {
-	console.log('now');
 	$("#description").text = (language === 'fr') ? "Étudiant à l'ENSIMAG" : "Student at ENSIMAG";
 	$("#switchflag").css('background-image', 'url("../img/' + language + '_flag.svg"');
 	for (var classe in dictionary[language]) {
