@@ -174,13 +174,18 @@ function switchLanguage() {
 }
 
 function setLanguageWithAnimation(language) {
+	var i = 0;
 	$('.name, .date, .place, .description, .title, #description').fadeOut(function() {
-		setLanguage(language);
+		i++;
+		if (i === 61) {
+			setLanguage(language);
+		}
 	});
 	$('.name, .date, .place, .description, .title, #description').fadeIn(1500);
 }
 
 function setLanguage(language) {
+	console.log('now');
 	$("#description").text = (language === 'fr') ? "Étudiant à l'ENSIMAG" : "Student at ENSIMAG";
 	$("#switchflag").css('background-image', 'url("../img/' + language + '_flag.svg"');
 	for (var classe in dictionary[language]) {
