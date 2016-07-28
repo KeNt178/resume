@@ -71,7 +71,7 @@ a:hover{
 #about_card{
 	position:relative;
 	padding:15px 32px 8px 32px;
-	margin-top:22px;
+	margin:15px auto;
 }
 #about_card>.tab{
 	margin-top:10px;
@@ -154,7 +154,7 @@ li:before {
 }
 #map_card{
 	position: relative;
-	margin:22px auto 44px auto;
+	margin:15px auto;
 }
 #map {
 	background-color: #CCC;
@@ -171,7 +171,7 @@ hr{
 #contact_card{
 	position:relative;
 	padding:15px 30px 15px 30px;
-	margin-top:22px;
+	margin:15px auto;
 }
 #contact_card>.tab{
 	margin-top:3px;
