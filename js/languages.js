@@ -167,21 +167,25 @@ var dictionary =
 function switchLanguage() {
 	if ($('input:checked').length === 1) {
 		$('input').prop('checked', true);
-		setLanguage("en");
+		setLanguageWithAnimation("en");
 	} else {
-		setLanguage("fr");
+		setLanguageWithAnimation("fr");
 	}
 }
 
-function setLanguage(language) {
+function setLanguageWithAnimation(language) {
 	$('.name, .date, .place, .description, .title, #description').fadeOut(function() {
-		$("#description").text = (language === 'fr') ? "Étudiant à l'ENSIMAG" : "Student at ENSIMAG";
-		$("#switchflag").css('background-image', 'url("../img/' + language + '_flag.svg"');
-		for (var classe in dictionary[language]) {
-			setClassValues(classe, dictionary[language][classe]);
-		}
+		setLanguage(language);
 	});
-	$('.name, .date, .place, .description, .title, #description').fadeIn();
+	$('.name, .date, .place, .description, .title, #description').fadeIn(1500);
+}
+
+function setLanguage(language) {
+	$("#description").text = (language === 'fr') ? "Étudiant à l'ENSIMAG" : "Student at ENSIMAG";
+	$("#switchflag").css('background-image', 'url("../img/' + language + '_flag.svg"');
+	for (var classe in dictionary[language]) {
+		setClassValues(classe, dictionary[language][classe]);
+	}
 }
 
 function setClassValues(classe, values) {
