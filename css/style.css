@@ -41,33 +41,12 @@ a:hover{
 	height:90px;
 	width:90px;
 	border-radius:50%;
-	box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.4);
-}
-#quick_card #flag{
-	height:40px;
-	width:40px;
-	border-radius:50%;
-	box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.4);
-	position: absolute;
+	box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.19), 0 2px 6px 0 rgba(0, 0, 0, 0.2);
 }
 #switchflag{
 	background-image: url('../img/france_flag.svg');
 	background-size: 100%;
 }
-
-/*
- * Pulse animation
-*/
-/*@-webkit-keyframes pulse {
-    0% { -webkit-transform: scale(1); }
-    50% { -webkit-transform: scale(1.2); }
-    100% { -webkit-transform: scale(1); }
-}
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-    100% { transform: scale(1); }
-}*/
 #quick_card #flag:hover{
 	opacity: 0.8;
 }
@@ -273,80 +252,4 @@ footer{
 		bottom:2%;
 		right:2%;
 	}
-}
-
-.checkBoxs,
-.checkBoxs .checkBox,
-.checkBoxs .checkBox label{
-  float: left;
-  position: relative;
-}
-
-.checkBoxs,
-.checkBoxs .checkBox label{
-  width: 100%;
-}
-
-.checkBoxs .checkBox{
-  width: 110px;
-  padding:0 20px;
-  margin:15px 0;
-}
-
-.checkBoxs .checkBox input{
-  display: none;
-}
-
-.checkBoxs .checkBox label,
-.checkBoxs .checkBox label .{
-  transition:500ms cubic-bezier(.4,0,.2,1);
-  -webkit-transition:500ms cubic-bezier(.4,0,.2,1);
-  -ms-transition:500ms cubic-bezier(.4,0,.2,1);
-}
-
-.checkBoxs .checkBox label{
-  height: 25px;
-  background: #ABA9AB;
-  border-radius: 25px;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.4);
-  cursor: pointer;
-
-}
-
-.checkBoxs .checkBox label .circle{
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: -7.5px;
-  left: -5px;
-  background: #fff;
-  border-radius: 50%;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.4);
-  transform: translateX(0%);
-  -webkit-transform: translateX(0%);
-  -ms-transform: translateX(0%);
-}
-
-.checkBoxs .checkBox label{
-  background: #607D8B;
-}
-
-.checkBoxs .checkBox.active label .circle{
-  background: #2196F3;
-  transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  -ms-transform: translateX(100%);
-}
-
-*,
-*:after,
-*::before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style-type: none;
-  outline: none;
 }

@@ -165,7 +165,8 @@ var dictionary =
 }
 
 function switchLanguage() {
-	if ($("#switchflag").css('background-image').match("france")) {
+	if ($('input:checked').length === 1) {
+		$('input').prop('checked', true);
 		setLanguage("en");
 	} else {
 		setLanguage("fr");
@@ -173,23 +174,20 @@ function switchLanguage() {
 }
 
 function setLanguage(language) {
-	console.log(language);
-	var flag_file = ((language === 'fr') ? 'france' : 'uk')
-	var description = (language === 'fr')?"Étudiant à l'ENSIMAG":"Student at ENSIMAG";
-	$("#switchflag").css('background-image', 'url("../img/' + flag_file + '_flag.svg"');
-	$("#description").text(description)
-	for (var classe in dictionary[language]) {
-		setClassValues(classe, dictionary[language][classe]);
-	}
+	$('.name, .date, .place, .description, .title, #description').fadeOut(function() {
+		$("#description").text = (language === 'fr') ? "Étudiant à l'ENSIMAG" : "Student at ENSIMAG";
+		$("#switchflag").css('background-image', 'url("../img/' + language + '_flag.svg"');
+		for (var classe in dictionary[language]) {
+			setClassValues(classe, dictionary[language][classe]);
+		}
+	});
+	$('.name, .date, .place, .description, .title, #description').fadeIn();
 }
 
 function setClassValues(classe, values) {
 	var classes = document.getElementsByClassName(classe);
 	for (var i = 0; i < classes.length; i++) {
 		if (values[i] !== '') {
-// 			$("#container").fadeOut(function() {
-//   $(this).text("World")
-// }).fadeIn();
 			classes[i].innerHTML = values[i];
 			if (classe === 'date' & i < 5) {
 				classes[i].innerHTML += '<span class="bullet">&#8226;</span>';
@@ -197,27 +195,3 @@ function setClassValues(classe, values) {
 		}
 	}
 }
-
-var delayTime = 1000;
-
-$(".checkBox label").click(function() {
-   $(this).parent(".checkBox").toggleClass('active');
-})
-
-function effect(eqItem, delay) {
-   setTimeout(function() {
-      setInterval(function() {
-
-         $(".checkBoxs").eq(eqItem).each(function() {
-            $(".checkBox label", this).click();
-         });
-
-      }, delayTime)
-   }, delay)
-}
-
-effect(4, 500);
-effect(3, 600);
-effect(2, 700);
-effect(1, 800);
-effect(0, 900);

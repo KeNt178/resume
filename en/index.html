@@ -5,6 +5,7 @@
 	<link href="../css/style.css" rel="stylesheet" type="text/css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/switchstyle.css">
 	<link rel="icon" type="image/png" href="../img/wam.png" />
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 	<meta name="description" content="Resume — LAPOINTE Quentin">
@@ -17,7 +18,10 @@
 <div id="blue_bg"></div>
 <header>
 	<div id="quick_card" class="card">
-		<div style="text-align: left"><a href="#"><img id="flag" onclick="switchLanguage()" src="../img/hybrid_flag.svg" /><img id="flag" onclick="switchLanguage()" src="../img/refresh.svg" /></a></div>
+		<input id="toggle" type="checkbox" class="hide"  onclick="switchLanguage()">
+		<label for="toggle">
+			<span class="hide"></span>
+		</label>
 		<div><img id="photo" src="../img/photo.jpg" /></div>
 		<h1 id="name">Quentin Lapointe</h1>
 		<h2 id="description">Étudiant à l'ENSIMAG</h2>
