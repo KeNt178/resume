@@ -14,7 +14,7 @@ label {
 	outline: none;
 	user-select: none;
 	padding: 2px;
-	width: 100px;
+	width: 80px;
 	height: 30px;
 	border-radius: 24px;
 	background: #f0f0f0;
@@ -51,7 +51,7 @@ input:checked + label:active:after {
 }
 
 input:checked + label:after {
-	left: 60px;
+	left: 40px;
   background-image: url('../img/en_flag.svg');
   background-size: 100%;
   background-position: center;
