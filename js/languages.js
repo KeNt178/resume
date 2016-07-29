@@ -176,11 +176,11 @@ function switchLanguage() {
 }
 
 function setLanguageWithAnimation(language) {
-	var i = 0;
+	var set = false;
 	$('.name, .date, .place, .description, .title, #description').fadeOut(function() {
-		i++;
-		if (i === 61) {
+		if (!set) {
 			setLanguage(language);
+			set = true;
 		}
 	});
 	$('.name, .date, .place, .description, .title, #description').fadeIn(1500);

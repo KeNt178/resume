@@ -51,9 +51,17 @@ function initMap() {
 			anchor: new google.maps.Point(17, 47)
 		}
 	}
+	var parachute = {
+		position: {lat: 47.9020811, lng: 2.1688557},
+		icon: {
+			url: '../img/parachute.svg',
+			scaledSize: new google.maps.Size(68, 40),
+			anchor: new google.maps.Point(34, 47)
+		}
+	}
 
-	var places =  [ensimag, velizy, utc, arismore, mediametrie, cabestan];
-	var colors = ['orange', 'orange', 'orange', 'black', 'green', 'blue'];
+	var places =  [parachute, ensimag, velizy, utc, arismore, mediametrie, cabestan];
+	var colors = ['grey', 'orange', 'orange', 'orange', 'black', 'green', 'blue'];
 
 	var mapDiv = document.getElementById("map");
 	var map = new google.maps.Map(mapDiv, {center: center, zoom: 6});
