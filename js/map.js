@@ -1,30 +1,22 @@
 function initMap() {
-
-
 	var center = {lat: 47.5818414, lng: 2.5530366};
+
+	var education = {
+		url: '../img/education.svg',
+		scaledSize: new google.maps.Size(30, 30),
+		anchor: new google.maps.Point(15, 45)
+	}
 	var ensimag = {
 		position: {lat: 45.1933905, lng: 5.7682998},
-		icon: {
-			url: '../img/education.svg',
-			scaledSize: new google.maps.Size(26, 26),
-			anchor: new google.maps.Point(13, 45)
-		}
+		icon: education
 	}
 	var velizy = {
 		position: {lat: 48.781856, lng: 2.218230},
-		icon: {
-			url: '../img/education.svg',
-			scaledSize: new google.maps.Size(26, 26),
-			anchor: new google.maps.Point(13, 45)
-		}
+		icon: education
 	}
 	var utc =  {
 		position: {lat: 49.4155636, lng: 2.8184277},
-		icon: {
-			url: '../img/education.svg',
-			scaledSize: new google.maps.Size(26, 26),
-			anchor: new google.maps.Point(13, 45)
-		}
+		icon: education
 	}
 
 	var mediametrie = {
@@ -55,8 +47,8 @@ function initMap() {
 		position: {lat: 47.9020811, lng: 2.1688557},
 		icon: {
 			url: '../img/parachute.svg',
-			scaledSize: new google.maps.Size(68, 40),
-			anchor: new google.maps.Point(34, 47)
+			scaledSize: new google.maps.Size(66, 39),
+			anchor: new google.maps.Point(33, 47)
 		}
 	}
 
