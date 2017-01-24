@@ -5,6 +5,7 @@ var dictionary =
 			"<i class=\"fa fa-graduation-cap\"></i>Formation",
 			"<i class=\"fa fa-suitcase\"></i>Expériences professionnelles",
 			"<i class=\"fa fa-tachometer\"></i>Compétences",
+			"<i class=\"fa fa-suitcase\"></i>Projets personnels",
 			"<i class=\"fa fa-flag\"></i>Langues",
 			"<i class=\"fa fa-magic\"></i>Spécificités personnelles",
 			""
@@ -24,6 +25,8 @@ var dictionary =
 			"Web",
 			"Outils",
 			"Systèmes d'exploitation",
+
+			"<a href=\"https://github.com/KeNt178/klink\"><img id=\"photo\" src=\"../img/klink-icon.png\" /> Klink</a>",
 
 			"Français",
 			"Anglais",
@@ -48,6 +51,8 @@ var dictionary =
 			"",
 			"",
 			"",
+
+			"Extension Chrome qui permet le paratage de lien en 1 clic via Facebook Messenger",
 
 			"Langue maternelle",
 			"Courant — TOEIC 890 points",
