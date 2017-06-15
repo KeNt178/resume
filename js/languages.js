@@ -93,8 +93,9 @@ var dictionary =
 			"<i class=\"fa fa-graduation-cap\"></i>Education",
 			"<i class=\"fa fa-suitcase\"></i>Work experience",
 			"<i class=\"fa fa-tachometer\"></i>Skills",
+			"<i class=\"fa fa-flag\"></i>Personal projects",
 			"<i class=\"fa fa-flag\"></i>Languages",
-			"<i class=\"fa fa-magic\"></i>Interests & activities",
+			"<i class=\"fa fa-flag\"></i>Interests & activities",
 			""
 		],
 		"name":[
@@ -206,6 +207,7 @@ function setLanguage(language) {
 function setClassValues(classe, values) {
 	var classes = document.getElementsByClassName(classe);
 	for (var i = 0; i < classes.length; i++) {
+		console.log(values[i])
 		if (values[i] !== '') {
 			classes[i].innerHTML = values[i];
 			if (classe === 'date' & i < 5) {
