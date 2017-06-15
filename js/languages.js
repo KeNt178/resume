@@ -52,13 +52,13 @@ var dictionary =
 			"",
 			"",
 
-			"Extension Chrome qui permet le paratage de lien en 1 clic via Facebook Messenger",
+			"Extension Chrome qui permet le partage de lien en 1 clic via Facebook Messenger",
 
 			"Langue maternelle",
 			"Courant — TOEIC 890 points",
 			"Niveau B1",
 
-			"10 sauts autonomes",
+			"13 sauts autonomes",
 			"",
 			"",
 			"",
@@ -113,6 +113,8 @@ var dictionary =
 			"Tools",
 			"Operating systems",
 
+			"<a href=\"https://github.com/KeNt178/klink\"><img id=\"photo\" src=\"../img/klink-icon.png\" /> Klink</a>",
+
 			"Français",
 			"English",
 			"Spanish",
@@ -137,11 +139,13 @@ var dictionary =
 			"",
 			"",
 
+			"Chrome extension that let you 1-click share your active tab through Facebook Messenger",
+
 			"Mother tongue",
 			"Fluent — Good communication skills",
 			"Basic notions",
 
-			"10 autonomous jumps",
+			"13 autonomous jumps",
 			"",
 			"",
 			"",
