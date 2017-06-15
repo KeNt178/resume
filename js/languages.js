@@ -2,8 +2,8 @@ var dictionary =
 {
 	"fr":{
 		"title":[
-			"<i class=\"fa fa-graduation-cap\"></i>Formation",
 			"<i class=\"fa fa-suitcase\"></i>Expériences professionnelles",
+			"<i class=\"fa fa-graduation-cap\"></i>Formation",
 			"<i class=\"fa fa-tachometer\"></i>Compétences",
 			"<i class=\"fa fa-suitcase\"></i>Projets personnels",
 			"<i class=\"fa fa-flag\"></i>Langues",
@@ -11,15 +11,15 @@ var dictionary =
 			""
 		],
 		"name":[
-			"Cursus d'ingénieur informatique",
-			"DUT Informatique",
-			"Tronc commun",
-			"Baccalauréat Scientifique",
-
 			"POC sur <a href=\"http://neo4j.com/\"><i class=\"fa fa-link\"></i> Neo4j</a>",
 			"POC sur <a href=\"http://neo4j.com/\"><i class=\"fa fa-link\"></i> Neo4j</a>",
 			"Application iOS",
 			"Application interne de collaboration",
+
+			"Cursus d'ingénieur informatique",
+			"DUT Informatique",
+			"Tronc commun",
+			"Baccalauréat Scientifique",
 
 			"Programmation",
 			"Web",
@@ -39,13 +39,13 @@ var dictionary =
 			"Passions"
 		],
 		"description":[
-			"Major",
-			"Mention bien",
-
 			"E-marketing à l'aide d'une base de donnée graphes<ul><li>Liaisons des données CRM et de navigation Web de différents clients</li><li>Récupération d'une liste de contacts par calcul du chemin le moins cher en fonction d'une matrice de prix</li></ul>",
 			"Détection d'incohérences au sein d'une BD relationnelle en la transposant en BD orientée graphes<ul><li>Modélisation de la BD & ingestion des données</li><li>Détection d'incohérences & propositions de rectification</li><li>Statistiques sur les audiences Internet multi-support</li></ul>",
 			"Développement de <a href=\"https://itunes.apple.com/fr/app/togafmore/id581774033\"><i class=\"fa fa-link\"></i> TogafMore</a>",
 			"",
+
+			"Major",
+			"Mention bien",
 
 			"",
 			"",
@@ -66,32 +66,32 @@ var dictionary =
 		],
 		"place":[
 			"",
-			"IUT de Vélizy-Villacoublay",
-			"Université de Technologie de Compiègne",
+			"",
+			"",
 			"",
 
 			"",
-			"",
-			"",
+			"IUT de Vélizy-Villacoublay",
+			"Université de Technologie de Compiègne",
 			""
 		],
 		"date":[
+			"Juin – Juillet 2016",
+			"Avril – Juillet 2015",
+			"Juillet 2014",
+			"Juillet 2012",
+
 			"aujourd'hui",
 			"",
 			"",
 			"",
-			"",
-
-			"Juin – Juillet 2016",
-			"Avril – Juillet 2015",
-			"Juillet 2014",
-			"Juillet 2012"
+			""
 		]
 	},
 	"en":{
 		"title":[
-			"<i class=\"fa fa-graduation-cap\"></i>Education",
 			"<i class=\"fa fa-suitcase\"></i>Work experience",
+			"<i class=\"fa fa-graduation-cap\"></i>Education",
 			"<i class=\"fa fa-tachometer\"></i>Skills",
 			"<i class=\"fa fa-flag\"></i>Personal projects",
 			"<i class=\"fa fa-flag\"></i>Languages",
@@ -99,15 +99,15 @@ var dictionary =
 			""
 		],
 		"name":[
-			"Computer engineer curriculum",
-			"Two-year university degree in computer science",
-			"Core curriculum",
-			"Science baccalaureate",
-
 			"POC on <a href=\"http://neo4j.com/\"><i class=\"fa fa-link\"></i> Neo4j</a>",
 			"POC on <a href=\"http://neo4j.com/\"><i class=\"fa fa-link\"></i> Neo4j</a>",
 			"iOS application",
 			"Internal application of collaboration",
+
+			"Computer engineer curriculum",
+			"Two-year university degree in computer science",
+			"Core curriculum",
+			"Science baccalaureate",
 
 			"Programming",
 			"Web",
@@ -127,13 +127,13 @@ var dictionary =
 			""
 		],
 		"description":[
-			"Top of the year",
-			"With honours",
-
 			"E-marketing with graph-oriented database<ul><li>Linking CRM and Web navigation data from several clients</li><li>Collecting a list of contacts by computing the least expensive path according to a price matrix</li></ul>",
 			"Inconsistencies detection in a relational database by transposing it in a graph oriented database<ul><li>Database modeling & data ingestion</li><li>Inconsistencies detection & rectification proposals</li><li>Statistics over multisupport Internet audiences</li></ul>",
 			"Development of <a href=\"https://itunes.apple.com/fr/app/togafmore/id581774033\"><i class=\"fa fa-link\"></i> TogafMore</a>",
 			"",
+
+			"Top of the year",
+			"With honours",
 
 			"",
 			"",
@@ -154,24 +154,26 @@ var dictionary =
 		],
 		"place":[
 			"",
+			"",
+			"",
+			"",
+
+			"",
 			"UIT of Vélizy-Villacoublay",
 			"University of Technology of Compiègne",
-			"",
-			"",
-			"",
-			"",
 			""
 		],
 		"date":[
-			"today",
-			"",
-			"",
-			"",
-			"",
 			"June - July 2016",
 			"April - July 2015",
 			"July 2014",
 			"July 2012"
+
+			"today",
+			"",
+			"",
+			"",
+			""
 		]
 	}
 }
@@ -207,10 +209,9 @@ function setLanguage(language) {
 function setClassValues(classe, values) {
 	var classes = document.getElementsByClassName(classe);
 	for (var i = 0; i < classes.length; i++) {
-		console.log(values[i])
 		if (values[i] !== '') {
 			classes[i].innerHTML = values[i];
-			if (classe === 'date' & i < 5) {
+			if (classe === 'date' & i > 5) {
 				classes[i].innerHTML += '<span class="bullet">&#8226;</span>';
 			}
 		}
