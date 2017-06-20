@@ -26,7 +26,8 @@ var dictionary =
 			"Outils",
 			"Systèmes d'exploitation",
 
-			"<a href=\"https://github.com/KeNt178/klink\"><img id=\"photo\" src=\"../img/klink-icon.png\" /> Klink</a>",
+			"<a href=\"https://github.com/lapwat/klink\"><img id=\"photo\" src=\"../img/klink-icon.png\" /> Klink</a>",
+			"<a href=\"https://github.com/lapwat/kasswat\"><img id=\"photo\" src=\"../img/kasswat-icon.png\" /> Kasswat</a>",
 
 			"Français",
 			"Anglais",
@@ -53,6 +54,7 @@ var dictionary =
 			"",
 
 			"Extension Chrome qui permet le partage de lien en 1 clic via Facebook Messenger",
+			"Extension Chrome qui supprime toute publicité ou contenu sponsorisé sur Facebook",
 
 			"Langue maternelle",
 			"Courant — TOEIC 890 points",
@@ -114,7 +116,8 @@ var dictionary =
 			"Tools",
 			"Operating systems",
 
-			"<a href=\"https://github.com/KeNt178/klink\"><img id=\"photo\" src=\"../img/klink-icon.png\" /> Klink</a>",
+			"<a href=\"https://github.com/lapwat/klink\"><img id=\"photo\" src=\"../img/klink-icon.png\" /> Klink</a>",
+			"<a href=\"https://github.com/lapwat/kasswat\"><img id=\"photo\" src=\"../img/kasswat-icon.png\" /> Kasswat</a>",
 
 			"Français",
 			"English",
@@ -141,6 +144,7 @@ var dictionary =
 			"",
 
 			"Chrome extension that let you 1-click share your active tab through Facebook Messenger",
+			"Chrome extension that remove any ad or sponsored content on Facebook",
 
 			"Mother tongue",
 			"Fluent — Good communication skills",
@@ -211,7 +215,7 @@ function setClassValues(classe, values) {
 	for (var i = 0; i < classes.length; i++) {
 		if (values[i] !== '') {
 			classes[i].innerHTML = values[i];
-			if (classe === 'date' & i > 5) {
+			if (classe === 'date' & i > 3) {
 				classes[i].innerHTML += '<span class="bullet">&#8226;</span>';
 			}
 		}
