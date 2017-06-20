@@ -143,8 +143,8 @@ var dictionary =
 			"",
 			"",
 
-			"Chrome extension that let you 1-click share your active tab through Facebook Messenger",
-			"Chrome extension that remove any ad or sponsored content on Facebook",
+			"Chrome extension that lets you 1-click share your active tab through Facebook Messenger",
+			"Chrome extension that removes any ad or sponsored content on Facebook",
 
 			"Mother tongue",
 			"Fluent — Good communication skills",
