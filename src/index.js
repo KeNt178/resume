@@ -27,6 +27,6 @@ app.get('/en', function (req, res, next) {
   }
 })
 
-app.listen(80, function () {
-  console.log('Listening on http://localhost:' + 80)
+app.listen(8080, function () {
+  console.log('Listening on http://localhost:' + 8080)
 })
