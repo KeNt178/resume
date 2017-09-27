@@ -1,4 +1,4 @@
-FORM node:alpine
+FROM node:alpine
 MAINTAINER lapwat
 
 ADD src /root/src
