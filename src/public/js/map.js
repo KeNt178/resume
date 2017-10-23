@@ -1,6 +1,6 @@
 function initMap() {
-	var center = {lat: 47.5818414, lng: 2.5530366};
-
+	var center = {lat: 46.5818414, lng: 2.5530366};
+	// var center = {lat: 46.6936371, lng: -1.5504454};
 	var education = {
 		url: '../img/education.svg',
 		scaledSize: new google.maps.Size(30, 30),
@@ -43,6 +43,15 @@ function initMap() {
 			anchor: new google.maps.Point(17, 47)
 		}
 	}
+	var rgx1 = {
+		position: {lat: 43.6270362, lng: 7.0386743},
+		icon: {
+			url: '../img/rgx.png',
+			scaledSize: new google.maps.Size(34, 34),
+			anchor: new google.maps.Point(17, 47)
+		}
+	}
+
 	var parachute = {
 		position: {lat: 47.9020811, lng: 2.1688557},
 		icon: {
@@ -52,11 +61,11 @@ function initMap() {
 		}
 	}
 
-	var places =  [parachute, ensimag, velizy, utc, arismore, mediametrie, cabestan];
-	var colors = ['grey', 'orange', 'orange', 'orange', 'black', 'green', 'blue'];
+	var places =  [parachute, ensimag, velizy, utc, arismore, mediametrie, cabestan, rgx1];
+	var colors = ['grey', 'orange', 'orange', 'orange', 'black', 'green', 'blue', 'beige'];
 
 	var mapDiv = document.getElementById("map");
-	var map = new google.maps.Map(mapDiv, {center: center, zoom: 6});
+	var map = new google.maps.Map(mapDiv, {center: center, zoom: 5});
 
 	var zindex = 0;
 	for (var i = 0; i < places.length; i++) {
