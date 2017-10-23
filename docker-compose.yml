@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  resume:
+    image: resume
+    labels:
+      - "traefik.enabled=true"
+      - "traefik.frontend.rule=Host:resume.lapw.at"
+      - "traefik.port=8080"
+    networks:
+      - reverseproxy_default
+    restart: always
+
+networks:
+  reverseproxy_default:
+    external:
+      name: traefik_default
+
