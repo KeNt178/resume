@@ -27,6 +27,7 @@ var dictionary =
 			"Outils",
 			"Systèmes d'exploitation",
 
+			"<a href=\"https://github.com/lapwat/secure-open-docker\"> Secure Open Docker</a>",
 			"<a href=\"https://github.com/lapwat/klink\"><img id=\"photo\" src=\"../img/klink-icon.png\" /> Klink</a>",
 			"<a href=\"https://github.com/lapwat/kasswat\"><img id=\"photo\" src=\"../img/kasswat-icon.png\" /> Kasswat</a>",
 
@@ -55,6 +56,7 @@ var dictionary =
 			"",
 			"",
 
+			"Un environnement Docker pour ouvrir en sécurité des images, vidéos, sons et plus",
 			"Extension Chrome qui permet le partage de lien en 1 clic via Facebook Messenger",
 			"Extension Chrome qui supprime toute publicité ou contenu sponsorisé sur Facebook",
 
@@ -96,7 +98,7 @@ var dictionary =
 	},
 	"en":{
 		"title":[
-			"<i class=\"fa fa-suitcase\"></i>Work experience",
+			"<i class=\"fa fa-suitcase\"></i>Work experiences",
 			"<i class=\"fa fa-graduation-cap\"></i>Education",
 			"<i class=\"fa fa-tachometer\"></i>Skills",
 			"<i class=\"fa fa-flag\"></i>Personal projects",
@@ -121,6 +123,7 @@ var dictionary =
 			"Tools",
 			"Operating systems",
 
+			"<a href=\"https://github.com/lapwat/secure-open-docker\"> Secure Open Docker</a>",
 			"<a href=\"https://github.com/lapwat/klink\"><img id=\"photo\" src=\"../img/klink-icon.png\" /> Klink</a>",
 			"<a href=\"https://github.com/lapwat/kasswat\"><img id=\"photo\" src=\"../img/kasswat-icon.png\" /> Kasswat</a>",
 
@@ -149,6 +152,7 @@ var dictionary =
 			"",
 			"",
 
+			"A virtual docker environment to open securely images, videos, sounds and more",
 			"Chrome extension that lets you 1-click share your active tab through Facebook Messenger",
 			"Chrome extension that removes any ad or sponsored content on Facebook",
 
