@@ -3,7 +3,7 @@ var dictionary =
 	"fr":{
 		"title":[
 			"<i class=\"fa fa-suitcase\"></i>Expériences professionnelles",
-			"<i class=\"fa fa-graduation-cap\"></i>Formation",
+			"<i class=\"fa fa-graduation-cap\"></i>Education",
 			"<i class=\"fa fa-tachometer\"></i>Compétences",
 			"<i class=\"fa fa-suitcase\"></i>Projets personnels",
 			"<i class=\"fa fa-flag\"></i>Langues",
@@ -19,8 +19,6 @@ var dictionary =
 
 			"Cursus d'ingénieur informatique",
 			"DUT Informatique",
-			"Tronc commun",
-			"Baccalauréat Scientifique",
 
 			"Programmation",
 			"Web",
@@ -46,10 +44,8 @@ var dictionary =
 			"E-marketing à l'aide d'une base de données graphes<ul><li>Liaisons des données CRM et de navigation Web de différents clients</li><li>Récupération d'une liste de contacts par calcul du chemin le moins cher en fonction d'une matrice de prix</li></ul>",
 			"Détection d'incohérences au sein d'une BD relationnelle en la transposant en BD orientée graphes<ul><li>Modélisation de la BD & ingestion des données</li><li>Détection d'incohérences & propositions de rectification</li><li>Statistiques sur les audiences Internet multi-support</li></ul>",
 			"Développement de <a href=\"https://itunes.apple.com/fr/app/togafmore/id581774033\"><i class=\"fa fa-link\"></i> TogafMore</a>",
-			"",
 
 			"Major",
-			"Mention bien",
 
 			"",
 			"",
@@ -227,7 +223,7 @@ function setClassValues(classe, values) {
 	for (var i = 0; i < classes.length; i++) {
 		if (values[i] !== '') {
 			classes[i].innerHTML = values[i];
-			if (classe === 'date' & i > 4) {
+			if (classe === 'date' & i <= 4) {
 				classes[i].innerHTML += '<span class="bullet">&#8226;</span>';
 			}
 		}

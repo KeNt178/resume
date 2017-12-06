@@ -18,10 +18,18 @@
 <div id="blue_bg"></div>
 <header>
 	<div id="quick_card" class="card">
-		<input id="toggle" type="checkbox" class="hide"  onclick="switchLanguage()">
-		<label id="switchlabel" for="toggle">
-			<span class="hide"></span>
-		</label>
+		<div style="display: flex; justify-content: space-between;">
+			<div>
+				<input id="toggle" type="checkbox" class="hide"  onclick="switchLanguage()">
+				<label id="switchlabel" for="toggle">
+					<span class="hide"></span>
+				</label>
+			</div>
+			<div>
+				<a href="https://github.com/lapwat/"><i class="fa fa-github fa-2x"></i></a>
+				<a href="https://linkedin.com/in/quentin-lapointe-4821a4a0/"><i class="fa fa-linkedin fa-2x"></i></a>
+			</div>
+		</div>
 		<div><img id="photo" src="../img/photo.jpg" /></div>
 		<h1 id="name">Quentin Lapointe</h1>
 		<h2 id="description">Étudiant à l'ENSIMAG</h2>
@@ -33,18 +41,18 @@
 	<div id="map"></div>
 </div>
 <div id="about_card" class="card">
-	<section class="tab">
+	<section class="tab formation">
 		<div class="title"><i class="fa fa-suitcase"></i>Expériences professionnelles</div>
 		<div class="content">
 			<section class="element">
-				<div class="date">Mai – Août 2017</div>
-				<div class="place">RGX-Systems</div>
-				<div class="name">Vision par ordinateur pour l'agriculture de précision</div>
+				<div class="date">Mai – Août 2017<span class="bullet">&#8226;</span></div>
+				<div class="place">RGX-Systems <i class="fa fa-tags"></i>Python – OpenCV – IA – Startup</div>
+				<div class="name">Vision par ordinateur</div>
 				<div class="description">Classification d'images hyperspectrales avec des techniques d'intelligence artificielle</div>
 			</section>
 			<section class="element">
-				<div class="date">Juin – Juillet 2016</div>
-				<div class="place">Cabestan</div>
+				<div class="date">Juin – Juillet 2016<span class="bullet">&#8226;</span></div>
+				<div class="place">Cabestan <i class="fa fa-tags"></i>Python – Big Data</div>
 				<div class="name">POC sur <a href="http://neo4j.com/"><i class="fa fa-link"></i> Neo4j</a></div>
 				<div class="description">E-marketing à l'aide d'une base de données graphes
 					<ul>
@@ -54,8 +62,8 @@
 				</div>
 			</section>
 			<section class="element">
-				<div class="date">Avril – Juillet 2015</div>
-				<div class="place">Médiamétrie</div>
+				<div class="date">Avril – Juillet 2015<span class="bullet">&#8226;</span></div>
+				<div class="place">Médiamétrie <i class="fa fa-tags"></i>Java – Big Data</div>
 				<div class="name">POC sur <a href="http://neo4j.com/"><i class="fa fa-link"></i> Neo4j</a></div>
 				<div class="description">Détection d'incohérences au sein d'une BD relationnelle en la transposant en BD orientée graphes
 					<ul>
@@ -65,46 +73,33 @@
 				</div>
 			</section>
 			<section class="element">
-				<div class="date">Juillet 2014</div>
-				<div class="place">Arismore</div>
+				<div class="date">Juillet 2014<span class="bullet">&#8226;</span></div>
+				<div class="place">Arismore <i class="fa fa-tags"></i>Objective-C – Mobile application</div>
 				<div class="name">Application iOS</div>
 				<div class="description">Développement de <a href="https://itunes.apple.com/fr/app/togafmore/id581774033"><i class="fa fa-link"></i> TogafMore</a></div>
 			</section>
 			<section class="element">
-				<div class="date">Juillet 2012</div>
-				<div class="place">Arismore</div>
+				<div class="date">Juillet 2012<span class="bullet">&#8226;</span></div>
+				<div class="place">Arismore <i class="fa fa-tags"></i>HTML – jQuery – Twitter Bootstrap</div>
 				<div class="name">Application interne de collaboration</div>
-				<div class="description">HTML - jQuery - Twitter Bootstrap</div>
 			</section>
 		</div>
 	</section>
 </div>
 <div id="about_card" class="card">
-	<section class="tab formation">
-		<div class="title"><i class="fa fa-graduation-cap"></i>Formation</div>
+	<section class="tab">
+		<div class="title"><i class="fa fa-graduation-cap"></i>Education</div>
 		<div class="content">
 			<section class="element">
-				<div class="date">aujourd'hui<span class="bullet">&#8226;</span></div>
+				<div class="date">aujourd'hui</div>
 				<div class="name">Cursus d'ingénieur informatique</div>
 				<div class="place">ENSIMAG</div>
 			</section>
 			<section class="element">
-				<div class="date">2015<span class="bullet">&#8226;</span></div>
+				<div class="date">2013 – 2015</div>
 				<div class="name">DUT Informatique</div>
 				<div class="description">Major</div>
 				<div class="place">IUT de Vélizy-Villacoublay</div>
-			</section>
-			<section class="element">
-				<div class="date">2013<span class="bullet">&#8226;</span></div>
-				<div class="name">Tronc commun</div>
-				<div class="place">Université de Technologie de Compiègne</div>
-			</section>
-			<section class="element">
-				<div class="date">2012<span class="bullet">&#8226;</span></div>
-				<div class="name">Baccalauréat Scientifique</div>
-				<div class="description">Mention bien</div>
-				<div class="place">Saint-Germain-en-Laye</div>
-				<div class="date">2011<span class="bullet">&#8226;</span></div>
 			</section>
 		</div>
 	</section>
@@ -139,6 +134,10 @@
 	<section class="tab">
 		<div class="title"><i class="fa fa-flag"></i>Projets personnels</div>
 		<div class="content">
+			<section class="element">
+				<div class="name"><a href="https://github.com/lapwat/secure-open-docker"> Secure Open</a></div>
+				<div class="description">Un environnement Docker pour ouvrir en sécurité des images, vidéos, sons et plus</div>
+			</section>
 			<section class="element">
 				<div class="name"><a href="https://github.com/lapwat/klink"><img id="photo" src="../img/klink-icon.png" /> Klink</a></div>
 				<div class="description">Extension Chrome qui permet le partage de lien en 1 clic via Facebook Messenger</div>

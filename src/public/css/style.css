@@ -37,6 +37,9 @@ a:hover{
 	margin-top:10vh;
 	text-align:center;
 }
+i{
+	padding: 5px;
+}
 #quick_card #photo{
 	height:90px;
 	width:90px;
