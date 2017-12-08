@@ -61,8 +61,8 @@ function initMap() {
 		}
 	}
 
-	var places =  [parachute, ensimag, velizy, utc, arismore, mediametrie, cabestan, rgx1];
-	var colors = ['grey', 'orange', 'orange', 'orange', 'black', 'green', 'blue', 'beige'];
+	var places =  [ensimag, arismore, cabestan, rgx1, mediametrie]; // parachute
+	var colors = ['orange', 'black', 'blue', 'grey', 'green']; // 'grey'
 
 	var mapDiv = document.getElementById("map");
 	var map = new google.maps.Map(mapDiv, {center: center, zoom: 5});

@@ -4,10 +4,8 @@ var dictionary =
 		"title":[
 			"<i class=\"fa fa-suitcase\"></i>Expériences professionnelles",
 			"<i class=\"fa fa-graduation-cap\"></i>Education",
-			"<i class=\"fa fa-tachometer\"></i>Compétences",
 			"<i class=\"fa fa-suitcase\"></i>Projets personnels",
 			"<i class=\"fa fa-flag\"></i>Langues",
-			"<i class=\"fa fa-magic\"></i>Spécificités personnelles",
 			""
 		],
 		"name":[
@@ -20,24 +18,13 @@ var dictionary =
 			"Cursus d'ingénieur informatique",
 			"DUT Informatique",
 
-			"Programmation",
-			"Web",
-			"Outils",
-			"Systèmes d'exploitation",
-
-			"<a href=\"https://github.com/lapwat/secure-open-docker\"> Secure Open Docker</a>",
-			"<a href=\"https://github.com/lapwat/klink\"><img id=\"photo\" src=\"../img/klink-icon.png\" /> Klink</a>",
-			"<a href=\"https://github.com/lapwat/kasswat\"><img id=\"photo\" src=\"../img/kasswat-icon.png\" /> Kasswat</a>",
+			"",
+			"",
+			"",
 
 			"Français",
 			"Anglais",
-			"Espagnol",
-
-			"Parachutiste",
-			"Compétition inter-IUT — 24h de l'informatique",
-			"Babysitting & Cours de Mathématiques",
-			"Ramasseur de balles",
-			"Passions"
+			"Espagnol"
 		],
 		"description":[
 			"Classification d'images hyperspectrales avec des techniques d'intelligence artificielle",
@@ -47,24 +34,13 @@ var dictionary =
 
 			"Major",
 
-			"",
-			"",
-			"",
-			"",
-
 			"Un environnement Docker pour ouvrir en sécurité des images, vidéos, sons et plus",
 			"Extension Chrome qui permet le partage de lien en 1 clic via Facebook Messenger",
 			"Extension Chrome qui supprime toute publicité ou contenu sponsorisé sur Facebook",
 
 			"Langue maternelle",
 			"Courant — TOEIC 890 points",
-			"Niveau B1",
-
-			"13 sauts autonomes",
-			"",
-			"",
-			"",
-			"Musique — Théâtre — Piano — Judo — Tennis — Football"
+			"Niveau B1"
 		],
 		"place":[
 			"",
@@ -96,7 +72,6 @@ var dictionary =
 		"title":[
 			"<i class=\"fa fa-suitcase\"></i>Work experiences",
 			"<i class=\"fa fa-graduation-cap\"></i>Education",
-			"<i class=\"fa fa-tachometer\"></i>Skills",
 			"<i class=\"fa fa-flag\"></i>Personal projects",
 			"<i class=\"fa fa-flag\"></i>Languages",
 			"<i class=\"fa fa-flag\"></i>Interests & activities",
@@ -111,42 +86,22 @@ var dictionary =
 
 			"Computer engineer curriculum",
 			"Two-year university degree in computer science",
-			"Core curriculum",
-			"Science baccalaureate",
 
-			"Programming",
-			"Web",
-			"Tools",
-			"Operating systems",
-
-			"<a href=\"https://github.com/lapwat/secure-open-docker\"> Secure Open Docker</a>",
-			"<a href=\"https://github.com/lapwat/klink\"><img id=\"photo\" src=\"../img/klink-icon.png\" /> Klink</a>",
-			"<a href=\"https://github.com/lapwat/kasswat\"><img id=\"photo\" src=\"../img/kasswat-icon.png\" /> Kasswat</a>",
+			"",
+			"",
+			"",
 
 			"Français",
 			"English",
-			"Spanish",
-
-			"Parachutist",
-			"Interschool competition — 24h of computing",
-			"Babysitting & Mathematics lessons",
-			"Ball boy",
-			""
+			"Spanish"
 		],
 		"description":[
 			"Classification of hyperspectral images with aritificial intelligence techniques",
 			"E-marketing with graph-oriented database<ul><li>Linking CRM and Web navigation data from several clients</li><li>Collecting a list of contacts by computing the least expensive path according to a price matrix</li></ul>",
 			"Inconsistencies detection in a relational database by transposing it in a graph oriented database<ul><li>Database modeling & data ingestion</li><li>Inconsistencies detection & rectification proposals</li><li>Statistics over multisupport Internet audiences</li></ul>",
 			"Development of <a href=\"https://itunes.apple.com/fr/app/togafmore/id581774033\"><i class=\"fa fa-link\"></i> TogafMore</a>",
-			"",
 
 			"Top of the year",
-			"With honours",
-
-			"",
-			"",
-			"",
-			"",
 
 			"A virtual docker environment to open securely images, videos, sounds and more",
 			"Chrome extension that lets you 1-click share your active tab through Facebook Messenger",
@@ -154,13 +109,7 @@ var dictionary =
 
 			"Mother tongue",
 			"Fluent — Good communication skills",
-			"Basic notions",
-
-			"13 autonomous jumps",
-			"",
-			"",
-			"",
-			"Music — Theatre — Piano — Judo — Tennis — Soccer"
+			"Basic notions"
 		],
 		"place":[
 			"",
