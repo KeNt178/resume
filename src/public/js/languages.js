@@ -61,7 +61,7 @@ var dictionary =
 			"Juillet 2014",
 			"Juillet 2012",
 
-			"aujourd'hui",
+			"2015 – aujourd'hui",
 			"",
 			"",
 			"",
@@ -130,7 +130,7 @@ var dictionary =
 			"July 2014",
 			"July 2012",
 
-			"today",
+			"2015 – aujourd'hui",
 			"",
 			"",
 			"",
