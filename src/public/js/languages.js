@@ -95,7 +95,6 @@ var dictionary =
 			"June - July 2016",
 			"April - July 2015",
 			"July 2014",
-			"July 2012",
 
 			"",
 			""
