@@ -4,15 +4,13 @@ var dictionary =
 		"title":[
 			"<i class=\"fa fa-suitcase\"></i>Expériences professionnelles",
 			"<i class=\"fa fa-graduation-cap\"></i>Education",
-			"<i class=\"fa fa-suitcase\"></i>Projets personnels",
-			""
+			"<i class=\"fa fa-suitcase\"></i>Projets personnels"
 		],
 		"name":[
 			"Vision par ordinateur pour l'agriculture de précision",
 			"POC sur <a href=\"http://neo4j.com/\"><i class=\"fa fa-link\"></i> Neo4j</a>",
 			"POC sur <a href=\"http://neo4j.com/\"><i class=\"fa fa-link\"></i> Neo4j</a>",
 			"Application iOS",
-			"Application interne de collaboration",
 
 			"Cursus d'ingénieur informatique",
 			"DUT Informatique",
@@ -28,39 +26,26 @@ var dictionary =
 			"Détection d'incohérences au sein d'une BD relationnelle en la transposant en BD orientée graphes<ul><li>Modélisation de la BD & ingestion des données</li><li>Détection d'incohérences & propositions de rectification</li><li>Statistiques sur les audiences Internet multi-support</li></ul>",
 			"Développement de <a href=\"https://itunes.apple.com/fr/app/togafmore/id581774033\"><i class=\"fa fa-link\"></i> TogafMore</a>",
 
-			"Major",
-
 			"Un site de pari en cryptomonnaie",
 			"Un environnement Docker pour ouvrir en sécurité des images, vidéos, sons et plus",
 			"Extension Chrome qui permet le partage de lien en 1 clic via Facebook Messenger",
-			"Extension Chrome qui supprime toute publicité ou contenu sponsorisé sur Facebook et Google",
-
-			"Langue maternelle",
-			"Courant — TOEIC 890 points",
-			"Niveau B1"
+			"Extension Chrome qui supprime toute publicité ou contenu sponsorisé sur Facebook et Google"
 		],
 		"place":[
 			"",
 			"",
 			"",
 			"",
-			"",
 
-			"",
 			"IUT de Vélizy-Villacoublay",
-			"Université de Technologie de Compiègne",
-			""
+			"Université de Technologie de Compiègne"
 		],
 		"date":[
 			"Mai – Août 2017",
 			"Juin – Juillet 2016",
 			"Avril – Juillet 2015",
 			"Juillet 2014",
-			"Juillet 2012",
 
-			"2015 – aujourd'hui",
-			"",
-			"",
 			"",
 			""
 		]
@@ -69,17 +54,13 @@ var dictionary =
 		"title":[
 			"<i class=\"fa fa-suitcase\"></i>Work experiences",
 			"<i class=\"fa fa-graduation-cap\"></i>Education",
-			"<i class=\"fa fa-flag\"></i>Personal projects",
-			"<i class=\"fa fa-flag\"></i>Languages",
-			"<i class=\"fa fa-flag\"></i>Interests & activities",
-			""
+			"<i class=\"fa fa-flag\"></i>Personal projects"
 		],
 		"name":[
 			"Computer vision for precision agriculture",
 			"POC on <a href=\"http://neo4j.com/\"><i class=\"fa fa-link\"></i> Neo4j</a>",
 			"POC on <a href=\"http://neo4j.com/\"><i class=\"fa fa-link\"></i> Neo4j</a>",
 			"iOS application",
-			"Internal application of collaboration",
 
 			"Computer engineer curriculum",
 			"Two-year university degree in computer science",
@@ -95,8 +76,6 @@ var dictionary =
 			"Inconsistencies detection in a relational database by transposing it in a graph oriented database<ul><li>Database modeling & data ingestion</li><li>Inconsistencies detection & rectification proposals</li><li>Statistics over multisupport Internet audiences</li></ul>",
 			"Development of <a href=\"https://itunes.apple.com/fr/app/togafmore/id581774033\"><i class=\"fa fa-link\"></i> TogafMore</a>",
 
-			"Top of the year",
-
 			"A bet website using cryptocurrencies",
 			"A virtual Docker environment to open securely images, videos, sounds and more",
 			"Chrome extension that lets you 1-click share your active tab through Facebook Messenger",
@@ -107,12 +86,9 @@ var dictionary =
 			"",
 			"",
 			"",
-			"",
 
-			"",
 			"UIT of Vélizy-Villacoublay",
-			"University of Technology of Compiègne",
-			""
+			"University of Technology of Compiègne"
 		],
 		"date":[
 			"May - August 2017",
@@ -121,9 +97,6 @@ var dictionary =
 			"July 2014",
 			"July 2012",
 
-			"2015 – aujourd'hui",
-			"",
-			"",
 			"",
 			""
 		]
@@ -163,7 +136,7 @@ function setClassValues(classe, values) {
 	for (var i = 0; i < classes.length; i++) {
 		if (values[i] !== '') {
 			classes[i].innerHTML = values[i];
-			if (classe === 'date' & i <= 4) {
+			if (classe === 'date' & i <= 3) {
 				classes[i].innerHTML += '<span class="bullet">&#8226;</span>';
 			}
 		}
