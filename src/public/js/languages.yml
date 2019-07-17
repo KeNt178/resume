@@ -7,12 +7,14 @@ fr:
     - École d'ingénieurs en informatique / Master intelligence artificielle
     - DUT Informatique
 
-    - <a href="https://github.com/lapwat/cryptowall">Cryptowall</a>
+    - <a href="https://github.com/lapwat/cryptowall"><img id="photo" src="../img/cryptowall.png" width="32px" height="32px" /> Cryptowall</a>
     - <a href="https://github.com/lapwat/secure-open"><img id="photo" src="../img/docker.svg" width="32px" height="32px" /> Secure Open</a>
     # - <a href="https://chapow.lapw.at"><img id="photo" src="../img/chapow.svg" width="32px" height="32px" /> Chapow</a>
     - <a href="https://github.com/lapwat/klink"><img id="photo" src="../img/klink-icon.png" /> Klink</a>
     - <a href="https://github.com/lapwat/kasswat"><img id="photo" src="../img/kasswat-icon.png" /> Kasswat</a>
 
+    - Développement du Dashboard 2.0
+    - Recherche opérationnelle
     - Vision par ordinateur pour l'agriculture de précision
     - POC sur <a href="http://neo4j.com/"><i class="fa fa-link"></i> Neo4j</a>
     - POC sur <a href="http://neo4j.com/"><i class="fa fa-link"></i> Neo4j</a>
@@ -25,6 +27,8 @@ fr:
     - Partage de liens sur Facebook Messenger
     - Suppression des annonces sponsorisées sur Facebook, Google, Amazon et 9gag
 
+    - <ul><li>Génération de documents légaux pour véhicules offshore</li><li>Signatures électroniques</li><li>Recrutement et management de développeurs</li></ul>
+    - <ul><li>Classification de produits en fonction de leur nom</li><li>Algorithme de plus court chemin</li><li>Déploiement sur stack Serverless</li></ul>
     - Classification d'images avec des techniques d'intelligence artificielle
     - E-marketing à l'aide d'une base de données graphes<ul><li>Liaisons des données CRM et de navigation Web de différents clients</li><li>Récupération d'une liste de contacts par calcul du chemin le moins cher en fonction d'une matrice de prix</li></ul>
     - Détection d'incohérences au sein d'une BD relationnelle en la transposant en BD orientée graphes<ul><li>Modélisation de la BD & ingestion des données</li><li>Détection d'incohérences & propositions de rectification</li><li>Statistiques sur les audiences Internet multi-support</li></ul>
@@ -34,6 +38,8 @@ fr:
     - 2015 – 2018
     - 2013 – 2015
 
+    - Janvier 2019 – Aujourd'hui
+    - Avril – Décembre 2018
     - Mai – Août 2017
     - Juin – Juillet 2016
     - Avril – Juillet 2015
@@ -54,6 +60,8 @@ en:
     - <a href="https://github.com/lapwat/klink"><img id="photo" src="../img/klink-icon.png" /> Klink</a>
     - <a href="https://github.com/lapwat/kasswat"><img id="photo" src="../img/kasswat-icon.png" /> Kasswat</a>
 
+    - Dashboard 2.0 development
+    - Operational Research
     - Computer vision for precision agriculture
     - POC on <a href="http://neo4j.com/"><i class="fa fa-link"></i> Neo4j</a>
     - POC on <a href="http://neo4j.com/"><i class="fa fa-link"></i> Neo4j</a>
@@ -66,6 +74,8 @@ en:
     - Share links through Facebook Messager
     - Remove sponsored ads on Facebook, Google, Amazon and 9gag
 
+    - <ul><li>Legal document generation for offshore vehicules</li><li>Electronic signatures</li><li>Developers hiring and management</li></ul>
+    - <ul><li>Name based products classification</li><li>Constrained shortest path computation</li><li>Deployment on Serverless stack</li></ul>
     - Classification of images with aritificial intelligence techniques
     - E-marketing with graph-oriented database<ul><li>Linking CRM and Web navigation data from several clients</li><li>Collecting a list of contacts by computing the least expensive path according to a price matrix</li></ul>
     - Inconsistencies detection in a relational database by transposing it in a graph oriented database<ul><li>Database modeling & data ingestion</li><li>Inconsistencies detection & rectification proposals</li><li>Statistics over multisupport Internet audiences</li></ul>
@@ -75,6 +85,8 @@ en:
     - 2015 – 2018
     - 2013 – 2015
 
+    - January 2019 – Now
+    - April – December 2018
     - May – August 2017
     - June – July 2016
     - April – July 2015
