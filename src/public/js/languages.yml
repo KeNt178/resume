@@ -4,9 +4,10 @@ fr:
     - <i class="fa fa-suitcase"></i>Projets personnels
     - <i class="fa fa-suitcase"></i>Expériences professionnelles
   name:
-    - École d'ingénieurs en informatique / Master intelligence artificielle
+    - École d'ingénieurs en informatique / Master en intelligence artificielle
     - DUT Informatique
 
+    - <a href="https://github.com/Magisk-Modules-Repo/NFCScreenOff"><img id="photo" src="../img/nfcscreenoff.png" width="32px" height="32px" /> Nfc Screen Off</a>
     - <a href="https://github.com/lapwat/cryptowall"><img id="photo" src="../img/cryptowall.png" width="32px" height="32px" /> Cryptowall</a>
     - <a href="https://github.com/lapwat/secure-open"><img id="photo" src="../img/docker.svg" width="32px" height="32px" /> Secure Open</a>
     # - <a href="https://chapow.lapw.at"><img id="photo" src="../img/chapow.svg" width="32px" height="32px" /> Chapow</a>
@@ -21,13 +22,14 @@ fr:
     - Application iOS
 
   description:
+    - Lecture de tags NFC lorsque l'écran du téléphone est éteint 
     - Génération de portefeuilles Bitcoin, Ethereum, Monero et IOTA dans un conteneur
     - Lecture de PDF et de vidéos dans un conteneur
     # - Site de pari en cryptomonnaie
     - Partage de liens sur Facebook Messenger
     - Suppression des annonces sponsorisées sur Facebook, Google, Amazon et 9gag
 
-    - <ul><li>Génération de documents légaux pour véhicules offshore</li><li>Signatures électroniques</li><li>Recrutement et management de développeurs</li></ul>
+    - <ul><li>Génération de documents légaux pour véhicules offshore</li><li>Signatures électroniques</li><li>Recrutement et management de développeurs</li></ul>Réalisation d'une stack serverless pour l'aggrégation de trades sur différents crypto exchanges.<br/><br/>Realisation d'un site de A à Z<ul><li>Choix des technos</li><li>Recrutement d'une équipe de 3 développeurs</li><li>Generation de documents légaux a partir de fichiers de configuration (YAML + Markdown)</li><li>Mise en place de bonnes pratiques de sécurite</li><li>Gestion de l'environnement dans un Vault HashiCorp</li><li>Gestion de la pipeline de déploiement sur Heroku avec Gitlab-CI (build, test, deploy) pour tous les environnements (dev, nightly, staging, production)</li><li>Gestion de la résolution des noms sur Cloudflare.</li></ul>
     - <ul><li>Classification de produits en fonction de leur nom</li><li>Algorithme de plus court chemin</li><li>Déploiement sur stack Serverless</li></ul>
     - Classification d'images avec des techniques d'intelligence artificielle
     - E-marketing à l'aide d'une base de données graphes<ul><li>Liaisons des données CRM et de navigation Web de différents clients</li><li>Récupération d'une liste de contacts par calcul du chemin le moins cher en fonction d'une matrice de prix</li></ul>
@@ -38,7 +40,7 @@ fr:
     - 2015 – 2018
     - 2013 – 2015
 
-    - Janvier 2019 – Aujourd'hui
+    - Janvier 2019 – Octobre 2020 
     - Avril – Décembre 2018
     - Mai – Août 2017
     - Juin – Juillet 2016
@@ -54,6 +56,7 @@ en:
     - Computer science engineer curriculum / Artificial intelligence Master
     - Two-year university degree in computer science
 
+    - <a href="https://github.com/Magisk-Modules-Repo/NFCScreenOff"><img id="photo" src="../img/nfcscreenoff.png" width="32px" height="32px" /> Nfc Screen Off</a>
     - <a href="https://github.com/lapwat/cryptowall"><img id="photo" src="../img/cryptowall.png" width="32px" height="32px" /> Cryptowall</a>
     - <a href="https://github.com/lapwat/secure-open"><img id="photo" src="../img/docker.svg" width="32px" height="32px" /> Secure Open</a>
     # - <a href="https://chapow.lapw.at"><img id="photo" src="../img/chapow.svg" width="32px" height="32px" /> Chapow</a>
@@ -68,13 +71,14 @@ en:
     - Application iOS
 
   description:
+    - Read NFC tags when phone screen is off
     - Bitcoin, Ethereum, Monero and IOTA wallet generator in a container
     - Read PDF and watch videos in a container
     # - Site de pari en cryptomonnaie
     - Share links through Facebook Messager
     - Remove sponsored ads on Facebook, Google, Amazon and 9gag
 
-    - <ul><li>Legal document generation for offshore vehicules</li><li>Electronic signatures</li><li>Developers hiring and management</li></ul>
+    - <ul><li>Legal document generation for offshore vehicules</li><li>Electronic signatures</li><li>Developers hiring and management</li></ul>Serverless stack for crypto exchange trades aggregation<br/><br/>Web application development from scratch<ul><li>Technologies choice</li><li>3 developer team recruitment</li><li>Legal contracts generation from configuration files (YAML + Markdown)</li><li>Implementation of good security practices</li><li>Environment management in an Hashicorp Vault</li><li>Management of the deployement pipeline on Heroku with Gitlab-CI (build, test, deploy) for all environments (dev, nightly, staging, production),</li><li>DNS resolution with Cloudflare</li></ul>
     - <ul><li>Name based products classification</li><li>Constrained shortest path computation</li><li>Deployment on Serverless stack</li></ul>
     - Classification of images with aritificial intelligence techniques
     - E-marketing with graph-oriented database<ul><li>Linking CRM and Web navigation data from several clients</li><li>Collecting a list of contacts by computing the least expensive path according to a price matrix</li></ul>
@@ -85,7 +89,7 @@ en:
     - 2015 – 2018
     - 2013 – 2015
 
-    - January 2019 – Now
+    - January 2019 – October 2020
     - April – December 2018
     - May – August 2017
     - June – July 2016
