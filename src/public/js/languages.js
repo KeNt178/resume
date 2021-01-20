@@ -36,7 +36,7 @@ function setLanguageWithAnimation(locale) {
 }
 
 async function setLanguage(locale, data) {
-  $("#description").text((locale == 'fr') ? "Intelligence artificielle & Blockchain" : "Artificial intelligence & Blockchain");
+  $("#description").text((locale == 'fr') ? "Data & DevSecOps" : "Data & DevSecOps");
   $("#switchflag").css('background-image', 'url("../img/' + locale + '_flag.svg"');
   for (var classe in data) {
     setClassValues(classe, data[classe]);
