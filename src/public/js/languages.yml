@@ -1,8 +1,8 @@
 fr:
   title:
-    - <i class="fa fa-graduation-cap"></i>Education
-    - <i class="fa fa-suitcase"></i>Projets personnels
-    - <i class="fa fa-suitcase"></i>Expériences professionnelles
+    - <i class="fa fa-graduation-cap fa-2x"></i>Education
+    - <i class="fa fa-magic fa-2x"></i>Projets personnels
+    - <i class="fa fa-suitcase fa-2x"></i>Expériences professionnelles
   name:
     - École d'ingénieurs en informatique / Master en intelligence artificielle
     - DUT Informatique
@@ -49,9 +49,9 @@ fr:
 
 en:
   title:
-    - <i class="fa fa-graduation-cap"></i>Education
-    - <i class="fa fa-suitcase"></i>Personal projects
-    - <i class="fa fa-suitcase"></i>Work experiences
+    - <i class="fa fa-graduation-cap fa-2x"></i>Education
+    - <i class="fa fa-magic fa-2x"></i>Personal projects
+    - <i class="fa fa-suitcase fa-2x"></i>Work experiences
   name:
     - Computer science engineer curriculum / Artificial intelligence Master
     - Two-year university degree in computer science
